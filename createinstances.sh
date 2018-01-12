@@ -10,7 +10,7 @@
 # count=$(nproc)
 
 ## if you want to use this dynamically, you might consider this version
-# for i in {1..count}
+# for i in {1..$count}
 for i in {1..4}
 do
     echo "started instance no: $i"
