@@ -4,7 +4,9 @@ This project is under the http://www.wtfpl.net License, the best one that's out 
 
 Be sure to make it meet your needs.
 More comments in the files.
+READ THE COMMENTS
 You need both scriptfiles in order to make it work.
+You also need to make them executable.
 
 You can safely exit your shells after triggering the conversion.
 Not sure, if the script will exit clean after finishing. - Still in my first productive run... but I see no reason why not.
