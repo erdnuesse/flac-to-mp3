@@ -9,7 +9,7 @@
 ## so this should work 
 # count=$(nproc)
 
-## if you want to use this dynamically, you might consider this version
+## if you want to use this dynamically, you might consider this version - UNTESTED though
 # for i in {1..$count}
 for i in {1..4}
 do
