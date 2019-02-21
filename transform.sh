@@ -32,7 +32,11 @@ do
         reldir=${reldir//flac}
         outdir="$local/$reldir"
         outfile="$outdir/$filename"
-        
+
+# is that working? 
+# outfile='$local/""$(echo $(dirname "${i}") | cut -d'/' -f5-)"//flac"/"${i##*/}"'
+#       echo 'output file: ' "$outfile"
+
 ## SHOW ME THE CONTENTS of the VARIABLES
 #       echo 'File found:' "$i"
 #       echo 'Relative dir: ' "$reldir"
