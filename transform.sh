@@ -15,13 +15,13 @@
 IFS=$'\n'
 
 ## the paths given here contain my Directory structure, that I want to keep
-## remote=/mnt/music/FLAC/ARTIST/ALBUM/FLACFILE.flac
+## source=/mnt/music/FLAC/ARTIST/ALBUM/FLACFILE.flac
 ## local=/mnt/1tb/mp3/ARTIST/ALBUM/MP3FILE.mp3
 
-remote=/mnt/music/FLAC
-local=/mnt/1tb/mp3
+source=/mnt/music/FLAC
+dest=/mnt/1tb/mp3
 
-for i in $(find $remote -type f -iname '*.flac' );
+for i in $(find $source -type f -iname '*.flac' );
 do
 ## SET VARIABLES for PATHS and FILENAMES
         fullfile=$i
@@ -30,7 +30,7 @@ do
         fulldir=$(dirname "${i}")
         reldir="$(echo $fulldir | cut -d'/' -f5-)"
         reldir=${reldir//flac}
-        outdir="$local/$reldir"
+        outdir="$dest/$reldir"
         outfile="$outdir/$filename"
 
 # is that working? 
